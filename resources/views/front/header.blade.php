@@ -5,7 +5,7 @@
         </h1>
     </a>
 </div>
-<div class="col-lg-6 col-6 text-left">
+<div class="col-lg-6 col-6 arear-search text-left">
     <div>
         <div class="search" aria-expanded="false">
             <input type="search" class="input-search" placeholder="Search products...." value="">
@@ -15,13 +15,15 @@
         </div>
     </div>
 </div>
-<div class="col-lg-3 col-6 text-right">
-    <a href="" class="btn border">
-        <i class="fas fa-heart text-primary"></i>
-        <span class="badge">0</span>
-    </a>
-    <a href="" class="btn border">
-        <i class="fas fa-shopping-cart text-primary"></i>
-        <span class="badge">0</span>
-    </a>
+<div class="col-lg-3 col-6 text-right" style="position: relative">
+    <button href="" class="btn border btn-cart">
+        <i class="icon-cart fas fa-shopping-cart text-primary"></i>
+    </button>
+
+    <div class="wrap">
+        <div class="container">
+            <img class="img-no-cart" src="{{asset('/public/images/no-cart.png')}}" alt="">
+            <div class="text-des">Chưa có sản phẩm</div>
+        </div>
+    </div>
 </div>
