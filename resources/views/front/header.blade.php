@@ -1,4 +1,4 @@
-<div class="col-lg-3 d-none d-lg-block">
+<div class="col-lg-3 d-none d-lg-block header-search">
     <a href="" class="text-decoration-none">
         <h1 class="m-0 display-5 font-weight-semi-bold">
             <span class="text font-weight-bold border px-3 mr-1">IT-4M</span>
@@ -15,15 +15,49 @@
         </div>
     </div>
 </div>
-<div class="col-lg-3 col-6 text-right" style="position: relative">
-    <button href="" class="btn border btn-cart">
+
+<div class="col-lg-3 col-6 text-right "
+    style=" position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+    "
+>
+        <div class="btn-notify">
+            <svg viewBox="3 2.5 14 14" x="0" y="0" class=" svg-icon icon-notification"><path d="m17 15.6-.6-1.2-.6-1.2v-7.3c0-.2 0-.4-.1-.6-.3-1.2-1.4-2.2-2.7-2.2h-1c-.3-.7-1.1-1.2-2.1-1.2s-1.8.5-2.1 1.3h-.8c-1.5 0-2.8 1.2-2.8 2.7v7.2l-1.2 2.5-.2.4h14.4zm-12.2-.8.1-.2.5-1v-.1-7.6c0-.8.7-1.5 1.5-1.5h6.1c.8 0 1.5.7 1.5 1.5v7.5.1l.6 1.2h-10.3z"></path><path d="m10 18c1 0 1.9-.6 2.3-1.4h-4.6c.4.9 1.3 1.4 2.3 1.4z"></path></svg>
+        </div>
+
+        <div class="container-notify">
+            <div class="wrap-notify">
+                <div class="content-notify">
+                    <img class="img-notify" src="{{asset('/public/images/no-notify.png')}}" alt="">
+                    <p class="notify-text">Log in to view notifications</p>
+                </div>
+            </div>
+            <div class="auth-btn">
+                <button class="btn-login btn-hover">Login</button>
+                <button class="btn-signup btn-hover">Sign Up</button>
+            </div>
+        </div>
+    <div class="btn-cart">
         <i class="icon-cart fas fa-shopping-cart text-primary"></i>
-    </button>
+    </div>
+
+    <div class="btn-user">
+        <img src="{{asset('/public/images/user.png')}}" class="img-user" alt="">
+        <div class="header-user">
+            <ul class="user-list">
+                <li class="user-item">Đơn hàng</li>
+                <li class="user-item">Đăng xuất</li>
+            </ul>
+        </div>
+    </div>
+
 
     <div class="wrap">
         <div class="container">
             <img class="img-no-cart" src="{{asset('/public/images/no-cart.png')}}" alt="">
-            <div class="text-des">Chưa có sản phẩm</div>
+            <div class="text-des">No Products Yet</div>
         </div>
     </div>
 </div>

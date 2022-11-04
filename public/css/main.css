@@ -75,8 +75,100 @@
     cursor: pointer;
 }
 
+.btn-notify {
+    margin-right: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.container-notify {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    width: 25rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 10;
+    animation: fadeIn .3s ease-in;
+    display: none;
+}
+
+.container-notify.show {
+    display: block;
+}
+
+.wrap-notify {
+    align-items: center;
+    text-align: center;
+}
+
+.content-notify {
+    padding: 3.75rem 0;
+}
+
+.img-notify {
+    height: 6.25rem;
+    width: 6.25rem;
+    object-fit: contain;
+    vertical-align: bottom;
+}
+
+.notify-text {
+    margin: 1.25rem 0 0;
+    user-select: none;
+}
+
+.auth-btn {
+    position: relative;
+    display: flex;
+}
+
+.btn-login, .btn-signup {
+    position: relative;
+    color: currentColor;
+    height: 2.5rem;
+    width: 50%;
+    background-color: #f5f5f5;
+    border: 0;
+    user-select: none;
+}
+
+.btn-login::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    background-color: rgba(22, 24, 35, 0.12);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.btn-hover:hover {
+    background-color: #e8e8e8;
+    color: var(--text-cl);
+}
+
+.svg-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    position: relative;
+}
+
+.icon-notification {
+    width: 0.875rem !important;
+    height: 1.125rem !important;
+}
+
 .btn-cart {
+    cursor: pointer;
     border: none !important;
+    margin-right: 20px;
+    padding: 0 10px;
 }
 
 .icon-cart {
@@ -105,13 +197,15 @@
     from {
         opacity: 0;
         transform: scale(0);
-    } to {
+    }
+
+    to {
         opacity: 1;
-        transform: scale(2);
+        transform: scale(1);
     }
 }
 
-.container{
+.container {
     text-align: center;
     padding: 3.75rem 0;
 }
@@ -127,4 +221,39 @@
 
 .text-des {
     margin-top: 12px;
+}
+
+.btn-user {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    padding: 0 10px;
+}
+
+.img-user {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 6px 6px 6px rgb(0 0 0 / 8%);
+}
+
+.header-user {
+    position: relative;
+    background-color: var(--white-cl);
+    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+}
+
+.user-list {
+    position: absolute;
+    top: 38px;
+    right: -12px;
+    background: #ccc;
+    z-index: 10;
+    width: 11rem;
+    list-style: none;
+    align-items: center;
+    border-radius: 4px;
+    text-align: left;
 }
