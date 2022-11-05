@@ -3,6 +3,7 @@
     --white-cl: #fff !important;
     --black-cl: #000 !important;
     --background-cl: rgba(22, 24, 35, 0.06);
+    --box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
 }
 
 .text {
@@ -88,7 +89,7 @@
     right: 15px;
     width: 25rem;
     background-color: #fff;
-    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    box-shadow: var(--box-shadow);
     border-radius: 4px;
     overflow: hidden;
     z-index: 10;
@@ -182,7 +183,7 @@
     top: 30px;
     right: 20px;
     background: var(--white-cl);
-    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    box-shadow: var(--box-shadow);
     border-radius: 4px;
     overflow: hidden;
     z-index: 10;
@@ -237,7 +238,7 @@
     height: 32px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 1px 6px 6px 6px rgb(0 0 0 / 8%);
+    box-shadow: var(--box-shadow) 1px 6px 6px 6px rgb(0 0 0 / 8%);
 }
 
 .header-user {
@@ -247,7 +248,7 @@
     right: -12px;
     z-index: 10;
     text-align: left;
-    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    box-shadow: var(--box-shadow);
     width: 11rem;
     border-radius: 4px;
     display: none;
@@ -279,7 +280,7 @@
 }
 
 .user-item:hover {
-    background-color: var(--background-cl);
+    background-color: rgba(22, 24, 35, .03);
     color: var(--text-cl);
 }
 
@@ -293,7 +294,7 @@
     top: 30px;
     right: 20px;
     background: var(--white-cl);
-    box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    box-shadow: var(--box-shadow);
     border-radius: 4px;
     overflow: hidden;
     z-index: 10;
@@ -302,26 +303,274 @@
 }
 
 /* TopNavbar */
-.nav-item-hover:hover {
-    background-color: var(--background-cl);
+.nav-item-hover {
+    display: inline-flex;
+    align-items: center;
+    color: var(--black-cl);
+    text-transform: uppercase;
 }
 
-.link-laptop {
+.nav-item-hover:hover {
+    cursor: pointer;
+    color: var(--black-cl);
+    opacity: 0.65;
+}
+
+.nav-show:hover .wrap-laptop {
+    display: block;
+}
+
+.link-menu {
     display: flex;
     color: var(--black-cl);
     text-transform: uppercase;
 }
 
-.link-laptop:hover {
+.link-menu:hover {
+    color: var(--black-cl);
     text-decoration: none !important;
-    color: var(--text-cl);
 }
 
-.icon-laptop {
+.link-svg {
     margin-right: 6px;
 }
 
-.svg-laptop {
+.svg-icon {
     width: 1.4rem;
     height: 1.4rem;
+}
+
+.wrap-laptop, .wrap-tablet, .wrap-accessory {
+    position: absolute;
+    background: #fff;
+    border: solid 1px #d3d3d3;
+    border-radius: 4px;
+    display: table;
+    width: 100%;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    z-index: 10;
+    top: 55px;
+    left: 0;
+    display: none;
+    animation: showLaptop 0.4s ease-in;
+}
+
+@keyframes showLaptop {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+        scale: 0;
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+        scale: 1;
+    }
+}
+
+.laptop-items {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.laptop-products, .tablet-products, .accessory-products {
+    width: 45%;
+    border-right: 1px solid #e3e3e3;
+}
+
+.header-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    padding: 8px 0 12px;
+    margin-bottom: 0 !important;
+}
+
+.header-list, .tablet-list, .accessory-list {
+    display: inline-block;
+    zoom: 1;
+    list-style: none;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-items {
+    width: 33.33%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.items-link {
+    display: block;
+    width: 150px;
+    font-size: 13px;
+    color: #3d3d3d;
+    padding: 5px 0;
+}
+
+.items-link:hover {
+    color: var(--black-cl);
+    text-decoration: none;
+}
+
+.laptop-price {
+    width: 20%;
+    border-right: 1px solid #e3e3e3;
+}
+
+.price-items {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.laptop-img, .tablet-img, .accessory-img {
+    width: 35%;
+    text-align: center;
+}
+
+
+/* Tablet */
+.show-tablet:hover .wrap-tablet {
+    display: block;
+}
+
+.tablet-price {
+    width: 15%;
+    border-right: 1px solid #e3e3e3;
+}
+
+.tablet-bestseller {
+    width: 29%;
+}
+
+.tablet-items, .accessory-items {
+    margin-bottom: 24px;
+    zoom: 1;
+}
+
+.tablet-item__link, .accessory-item__link {
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: block;
+}
+
+.tablet-img, .accessory-img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.tablet-description, .accessory-description {
+    margin-left: 90px;
+}
+
+.tablet-title, .accessory-title {
+    font-size: 14px;
+}
+
+.title-link {
+    color: var(--black-cl);
+}
+
+.title-link:hover {
+    text-decoration: none;
+    color: var(--black-cl);
+    opacity: 0.7;
+}
+
+.title-price {
+    color: var(--text-cl);
+}
+
+.svg-tablet {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* PC-Linh kiện */
+.show-pc {
+    display: inherit;
+    position: relative;
+}
+
+.show-pc:hover .components-list {
+    display: block;
+}
+
+.components-list {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    padding: 8px 20px;
+    background: #fff;
+    border: solid 1px #d3d3d3;
+    border-radius: 4px;
+    z-index: 10;
+    list-style: none;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    animation: showLaptop 0.3s ease-in;
+    display: none;
+}
+
+.components-item {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: var(--black-cl);
+}
+
+.component-link {
+    color: #3d3d3d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.43;
+}
+
+.component-link:hover {
+    text-decoration: none;
+    color: var(--black-cl);
+}
+
+
+/* Phụ kiện */
+.show-accessory {
+    display: inherit;
+}
+
+.show-accessory:hover .wrap-accessory{
+    display: block;
+}
+
+.accessory-products {
+    width: 33%;
+}
+
+.accessory-bestseller {
+    width: 36%;
+}
+
+.link-svg__headphone {
+    display: inherit;
+}
+
+.svg-headphone {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.btn-auth {
+    margin: 0 12px;
+}
+
+.btn-auth:hover {
+    text-decoration: none;
 }

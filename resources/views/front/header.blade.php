@@ -43,7 +43,7 @@
         <i class="icon-cart fas fa-shopping-cart text-primary"></i>
     </div>
 
-    {{-- <div class="btn-user">
+    <div class="btn-user">
         <img src="{{asset('/public/images/user.png')}}" class="img-user" alt="">
         <div class="header-user">
             <ul class="user-list">
@@ -58,7 +58,7 @@
                 </li>
             </ul>
         </div>
-    </div> --}}
+    </div>
 
 
     <div class="wrap">

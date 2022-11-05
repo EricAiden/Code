@@ -29,7 +29,7 @@
     </div>
 </div>
 
-@include('front.shippingbar')
+{{-- @include('front.shippingbar') --}}
 
 @yield('content')
 
