@@ -300,3 +300,28 @@
     animation: fadeIn .2s ease-in;
     display: none;
 }
+
+/* TopNavbar */
+.nav-item-hover:hover {
+    background-color: var(--background-cl);
+}
+
+.link-laptop {
+    display: flex;
+    color: var(--black-cl);
+    text-transform: uppercase;
+}
+
+.link-laptop:hover {
+    text-decoration: none !important;
+    color: var(--text-cl);
+}
+
+.icon-laptop {
+    margin-right: 6px;
+}
+
+.svg-laptop {
+    width: 1.4rem;
+    height: 1.4rem;
+}
