@@ -19,9 +19,9 @@
 <div class="container-fluid mb-5">
     <div class="row border-top px-xl-5">
 
-        @include('front.leftnavbar')
+        {{-- @include('front.leftnavbar') --}}
 
-        <div class="col-lg-9">
+        <div class="">
             @include('front.topnavbar')
             @include('front.carousel')
         </div>
