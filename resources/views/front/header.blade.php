@@ -1,7 +1,8 @@
 <div class="col-lg-3 d-none d-lg-block header-search">
     <a href="" class="text-decoration-none">
         <h1 class="m-0 display-5 font-weight-semi-bold">
-            <span class="text font-weight-bold border px-3 mr-1">IT-4M</span>
+            <img src="{{asset('/public/images/default-dark.svg')}}" alt="" style="width: 150px">
+            {{-- <span class="text font-weight-bold border px-3 mr-1">IT-4M</span> --}}
         </h1>
     </a>
 </div>
