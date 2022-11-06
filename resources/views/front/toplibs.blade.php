@@ -15,7 +15,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link rel="stylesheet" href="{{asset('/public/css/main.css')}}">
+{{-- <link rel="stylesheet" href="{{asset('/public/css/main.css')}}"> --}}
 <link href="{{asset('public/template/eshopper-1.0.0/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
 <!-- Customized Bootstrap Stylesheet -->

@@ -2,7 +2,7 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const cartBtn = $('.btn-cart')
-const noCart = $('.wrap');
+const noCart = $('.wrap-cart');
 const header = $('.header-search');
 
 const notifyBtn = $('.btn-notify');

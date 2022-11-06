@@ -42,7 +42,68 @@
         </div>
     <div class="btn-cart">
         <i class="icon-cart fas fa-shopping-cart text-primary"></i>
-        <div class="cart-number">7</div>
+        <div class="cart-number">7</div><div class="wrap-cart">
+        {{-- <div class="container">
+            <img class="img-no-cart" src="{{asset('/public/images/no-cart.png')}}" alt="">
+            <div class="text-des">No Products Yet</div>
+        </div> --}}
+        <div class="has-product">
+            <div class="text-product">recently added products</div>
+            <ul class="product-list">
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img class="product-item__img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
+                    <div class="product-infor">
+                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
+                        <div class="product-price">₫33.000</div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="btn-view__cart">Xem Giỏ Hàng</a>
+        </div>
+    </div>
+
     </div>
 
     <div class="btn-user">
@@ -63,64 +124,5 @@
     </div>
 
 
-    <div class="wrap-cart">
-        {{-- <div class="container">
-            <img class="img-no-cart" src="{{asset('/public/images/no-cart.png')}}" alt="">
-            <div class="text-des">No Products Yet</div>
-        </div> --}}
-        <div class="has-product">
-            <div class="text-product">recently added products</div>
-            <ul class="product-list">
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-                <li class="product-item">
-                    <img class="product-img" src="https://fptshop.com.vn/Uploads/Originals/2022/9/9/637983360411675900_iphone-14-pro-max-den-1.jpg" alt="">
-                    <div class="product-infor">
-                        <div class="product-name">iPhone 14 Pro Max 128GB</div>
-                        <div class="product-price">₫33.000</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+
 </div>

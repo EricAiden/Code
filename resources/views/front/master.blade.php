@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trang Chủ</title>
-    <link rel="stylesheet" href="{{asset('/public/images/favicon.ico')}}">
+    <link rel="stylesheet" type="text/csss" href="{{asset('/public/images/favicon.ico')}}">
     @include('front.toplibs')
     <link rel="stylesheet" href="{{asset('/public/css/main.css')}}">
 </head>
@@ -41,6 +41,6 @@
 @include('front.bottomlibs')
 </body>
 
-<script src="{{asset('/public/js/index.js')}}"></script>
+<script type="text/js" src="{{asset('/public/js/index.js')}}"></script>
 
 </html>

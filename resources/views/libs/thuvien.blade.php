@@ -3,5 +3,5 @@
 
 <link rel="stylesheet" href="{{ asset('public/css/bootstrap.min.css') }}">
 <script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
-<link rel="stylesheet" href="{{asset('/public/css/main.css')}}">
+{{-- <link rel="stylesheet" href="{{asset('/public/css/main.css')}}"> --}}
 
