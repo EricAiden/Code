@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers\admin\DanhMucSanPhamController;
 use App\Http\Controllers\admin\DashController;
 use App\Http\Controllers\admin\DemoController;
@@ -8,23 +9,27 @@ use App\Http\Controllers\admin\ThongKeController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',function(){
-     return view('home',[HomeController::class,'index']);
+Route::get('/', function () {
+    return view('home', [HomeController::class, 'index']);
 });
 
-Route::name('admin')->group(function(){
-     Route::prefix('admin')->group(function(){
+Route::name('admin')->group(function () {
+    Route::prefix('admin')->group(function () {
         //Route::resource('/',DashController::class);
         Route::resources([
-           'cat'=>DanhMucSanPhamController::class,
-           'pro'=>SanPhamController::class,
-           'demo'=>DemoController::class
+            'cat' => DanhMucSanPhamController::class,
+            'pro' => SanPhamController::class,
+            'demo' => DemoController::class
         ]);
-        Route::get('/',[DashController::class,'index']);
-        Route::get('thongke',[ThongKeController::class,'index'])
-        ->name('Thongke');
-        Route::post('timkiem',[FindController::class,'find'])
-        ->name('Timkiem');
-     });
+        Route::get('/', [DashController::class, 'index']);
+        Route::get('thongke', [ThongKeController::class, 'index'])
+            ->name('Thongke');
+        Route::post('timkiem', [FindController::class, 'find'])
+            ->name('Timkiem');
+    });
 });
 
+Route::name('cart')->group(function () {
+    Route::prefix('cart')->group(function () {
+    });
+});

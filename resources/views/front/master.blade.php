@@ -41,6 +41,6 @@
 @include('front.bottomlibs')
 </body>
 
-<script type="text/js" src="{{asset('/public/js/index.js')}}"></script>
+<script type="text/javascript" src="{{asset('/public/js/index.js')}}"></script>
 
 </html>

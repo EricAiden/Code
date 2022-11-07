@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Http\Controllers\admin;
+
 use App\Http\Controllers\Controller;
 use App\Http\Requests\DanhMucRequest;
 use Illuminate\Http\Request;
@@ -10,26 +12,28 @@ class DanhMucSanPhamController extends Controller
     /*Display a listing of the resource*/
     public function index()
     {
-       $danhmucs = DB::table('danhmucsanphams')->get(); 
-       //$danhmucs = DB::table('danhmucsanphams')->paginate(5);
-       return view('admin.danhmuc.index',[
-         'danhmucs'=>$danhmucs,
-         'title'=>'Quản trị nội dung - Công ty ABC']);
+        $danhmucs = DB::table('danhmucsanphams')->get();
+        //$danhmucs = DB::table('danhmucsanphams')->paginate(5);
+        return view('admin.danhmuc.index', [
+            'danhmucs' => $danhmucs,
+            'title' => 'Quản trị nội dung - Công ty ABC'
+        ]);
     }
+
 
     /*Show the form for creating a new resource*/
     public function create()
     {
-        return view('admin.danhmuc.add',[
-         'title'=>'Thêm Danh Mục Sản Phẩm'
-      ]);
+        return view('admin.danhmuc.add', [
+            'title' => 'Thêm Danh Mục Sản Phẩm'
+        ]);
     }
 
     /*Store a newly created resource in storage*/
     public function store(DanhMucRequest $request)
     {
         $params = [
-           'tendm' => $request->tendm
+            'tendm' => $request->tendm
         ];
         DB::table('danhmucsanphams')->insert($params);
         return redirect()->route('admincat.index');
@@ -38,33 +42,32 @@ class DanhMucSanPhamController extends Controller
     /*Display the specified resource*/
     public function show($id)
     {
-        
     }
 
     /*Show the form for editing the specified resource*/
     public function edit($id)
     {
-        $danhmuc = DB::table('danhmucsanphams')->where('iddm',$id)->first();
-        return view('admin.danhmuc.edit',[
-         'danhmuc'=>$danhmuc,
-         'title'=>'Sửa Danh Mục Sản Phẩm'
-      ]);
+        $danhmuc = DB::table('danhmucsanphams')->where('iddm', $id)->first();
+        return view('admin.danhmuc.edit', [
+            'danhmuc' => $danhmuc,
+            'title' => 'Sửa Danh Mục Sản Phẩm'
+        ]);
     }
 
     /*Update the specified resource in storage*/
     public function update(Request $request, $id)
     {
-       $params = [
-          'tendm'=>$request->tendm
-       ];
-       DB::table('danhmucsanphams')->where('iddm',$id)->update($params);
-       return redirect()->route('admincat.index');
+        $params = [
+            'tendm' => $request->tendm
+        ];
+        DB::table('danhmucsanphams')->where('iddm', $id)->update($params);
+        return redirect()->route('admincat.index');
     }
 
     /*Remove the specified resource from storage*/
     public function destroy($id)
     {
-       DB::table('danhmucsanphams')->where('iddm',$id)->delete();
-       return redirect()->route('admincat.index');
+        DB::table('danhmucsanphams')->where('iddm', $id)->delete();
+        return redirect()->route('admincat.index');
     }
 }
