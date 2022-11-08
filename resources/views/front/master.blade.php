@@ -26,7 +26,6 @@
             @include('front.topnavbar')
             @include('front.carousel')
         </div>
-
     </div>
 </div>
 
@@ -42,5 +41,5 @@
 </body>
 
 <script type="text/javascript" src="{{asset('/public/js/index.js')}}"></script>
-
+<script type="text/javascript" src="{{asset('/public/js/cart.js')}}"></script>
 </html>

@@ -10,10 +10,8 @@ class CartController extends Controller
 {
     public function index()
     {
-        $viewcart = DB::table('viewcart')->get();
-        //$danhmucs = DB::table('danhmucsanphams')->paginate(5);
-        return view('front.cart.ViewCart', [
-            'viewcart' => $viewcart,
+        return view('ViewCart', [
+            'title' => 'Home/Cart'
         ]);
     }
 }

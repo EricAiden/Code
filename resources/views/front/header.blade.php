@@ -100,7 +100,7 @@
                     </div>
                 </li>
             </ul>
-            <a href="#" class="btn-view__cart">Xem Giỏ Hàng</a>
+            <a href="" class="btn-view__cart">Xem Giỏ Hàng</a>
         </div>
     </div>
 

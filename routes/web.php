@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\DemoController;
 use App\Http\Controllers\admin\FindController;
 use App\Http\Controllers\admin\SanPhamController;
 use App\Http\Controllers\admin\ThongKeController;
+use App\Http\Controllers\client\CartController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,7 +30,11 @@ Route::name('admin')->group(function () {
     });
 });
 
-Route::name('cart')->group(function () {
-    Route::prefix('cart')->group(function () {
-    });
+// Route::name('cart')->group(function () {
+//     Route::get('cart', [CartController::class, 'index'])
+//         ->name('cart');
+// });
+
+Route::get('cart', function () {
+    return view('ViewCart', [CartController::class, 'index']);
 });
