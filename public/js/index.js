@@ -2,7 +2,6 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const cartBtn = $('.btn-cart')
-const noCart = $('.wrap-cart');
 const header = $('.header-search');
 
 const notifyBtn = $('.btn-notify');
@@ -12,11 +11,6 @@ const userBtn = $('.img-user');
 const userMenu = $('.header-user');
 
 window.addEventListener('load', () => {
-    cartBtn.addEventListener('click', () =>{
-        noCart.classList.toggle('show');
-        containerNotify.classList.remove('show');
-        userMenu.classList.remove('show');
-    });
 
     notifyBtn.addEventListener('click', () => {
         containerNotify.classList.toggle('show');

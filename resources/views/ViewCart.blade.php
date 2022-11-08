@@ -1,5 +1,6 @@
 
 <link type="text/css" rel="stylesheet" href="{{asset('/public/css/cart.css')}}">
+<link type="text/css" rel="stylesheet" href="{{asset('/public/css/footer.css')}}">
 
 @extends('front.cart')
 

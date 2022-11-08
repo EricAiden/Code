@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/csss" href="{{asset('/public/images/favicon.ico')}}">
     @include('front.toplibs')
     <link rel="stylesheet" href="{{asset('/public/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('/public/css/footer.css')}}">
 </head>
 <body>
 <div class="container-fluid">
@@ -20,8 +21,6 @@
 <div class="container-fluid mb-5">
     <div class="row border-top px-xl-5">
 
-        {{-- @include('front.leftnavbar') --}}
-
         <div class="">
             @include('front.topnavbar')
             @include('front.carousel')
@@ -29,7 +28,6 @@
     </div>
 </div>
 
-{{-- @include('front.shippingbar') --}}
 
 @yield('content')
 

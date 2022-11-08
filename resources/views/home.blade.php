@@ -2,7 +2,7 @@
 @section('content')
 
     <!-- Products Start -->
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-5" style="background-color: #f8f9fa">
         <div class="text-center mb-4">
             <h2 class="section-title px-5"><span class="px-2">Just Arrived</span></h2>
         </div>
