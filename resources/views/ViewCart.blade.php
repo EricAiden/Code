@@ -1,6 +1,9 @@
-@extends('front.master')
 
 <link type="text/css" rel="stylesheet" href="{{asset('/public/css/cart.css')}}">
+
+@extends('front.cart')
+
+@section('content')
 <div class="main">
     <div class="c-cart">
         <div class="container-view__cart">
@@ -28,7 +31,7 @@
                                         <a href="" class="product-cart__line">
                                             <h3 class="product-cart__name">iPhone 14 Pro Max 128GB</h3>
                                         </a>
-                                        <div class="product-cart__line" style="display: flex">
+                                        <div onclick="showDrop()" class="product-cart__line" style="display: flex">
                                             <div class="c-dropdown">
                                                 <div class="c-dropdown-button">
                                                     Tím
@@ -83,7 +86,7 @@
                                         <a href="" class="product-cart__line">
                                             <h3 class="product-cart__name">iPhone 14 Pro Max 128GB</h3>
                                         </a>
-                                        <div class="product-cart__line" style="display: flex">
+                                        <div onclick="showDrop()" class="product-cart__line" style="display: flex">
                                             <div class="c-dropdown">
                                                 <div class="c-dropdown-button">
                                                     Tím
@@ -138,7 +141,7 @@
                                         <a href="" class="product-cart__line">
                                             <h3 class="product-cart__name">iPhone 14 Pro Max 128GB</h3>
                                         </a>
-                                        <div class="product-cart__line" style="display: flex">
+                                        <div onclick="showDrop()" class="product-cart__line" style="display: flex">
                                             <div class="c-dropdown">
                                                 <div class="c-dropdown-button">
                                                     Tím
@@ -193,7 +196,7 @@
                                         <a href="" class="product-cart__line">
                                             <h3 class="product-cart__name">Laptop HP Pavilion 15 eg2058TU i5 1240P/8GB/256GB/15.6"FHD/Win 11</h3>
                                         </a>
-                                        <div class="product-cart__line" style="display: flex">
+                                        <div onclick="showDrop()" class="product-cart__line" style="display: flex">
                                             <div class="c-dropdown">
                                                 <div class="c-dropdown-button">
                                                     Tím
@@ -244,6 +247,5 @@
         </div>
     </div>
 </div>
-{{-- @section('content')
 
-@endsection --}}
+@endsection

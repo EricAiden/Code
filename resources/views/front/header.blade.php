@@ -18,7 +18,7 @@
 </div>
 
 <div class="col-lg-3 col-6 text-right "
-    style=" position: relative;
+        style=" position: relative;
             display: flex;
             align-items: center;
             justify-content: end;
@@ -100,7 +100,7 @@
                     </div>
                 </li>
             </ul>
-            <a href="" class="btn-view__cart">Xem Giỏ Hàng</a>
+            <a href="/finalWeb/cart" class="btn-view__cart">Xem Giỏ Hàng</a>
         </div>
     </div>
 
