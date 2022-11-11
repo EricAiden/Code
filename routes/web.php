@@ -11,8 +11,13 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home', [HomeController::class, 'index']);
+    return redirect('home');
 });
+
+Route::get('/', [HomeController::class, 'index']);
+
+
+// Route::get('/products', action: 'ProductsController@index');
 
 Route::name('admin')->group(function () {
     Route::prefix('admin')->group(function () {
@@ -29,11 +34,6 @@ Route::name('admin')->group(function () {
             ->name('Timkiem');
     });
 });
-
-// Route::name('cart')->group(function () {
-//     Route::get('cart', [CartController::class, 'index'])
-//         ->name('cart');
-// });
 
 Route::get('cart', function () {
     return view('ViewCart', [CartController::class, 'index']);
